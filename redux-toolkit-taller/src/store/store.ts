@@ -1,4 +1,4 @@
-import { configureStore, Middleware } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import authSlice from "./auth/authSlice";
 import { loggerMidelware } from "./middleware";
 
