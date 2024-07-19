@@ -8,7 +8,7 @@ interface UserAuth {
     password: string
 }
 
-export const loginUser: AsyncThunk<UserType, UserAuth, {}> = createAsyncThunk('auth/loginUser', async (credentials: UserAuth, thunkAPI) => {
+export const loginUser: AsyncThunk<UserType, UserAuth, Record<string, never>> = createAsyncThunk('auth/loginUser', async (credentials: UserAuth, thunkAPI) => {
     
     try {
         const response = await fetch(url, {
