@@ -7,7 +7,7 @@ export const store = configureStore({
         auth: authSlice
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(loggerMidelware),
-    devTools: process.env.NODE_ENV !== 'production'
+    devTools: process.env.NODE_ENV !== 'production',
 })
 
 
